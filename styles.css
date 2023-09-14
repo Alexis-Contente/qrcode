@@ -18,39 +18,64 @@ body {
   background-color: black;
   /* box-sizing */
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 15px;
   /* color */
   background-color: hsl(0, 0%, 100%);
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
+/* IMAGE & TEXTS */
+
 .img {
+  /* box-sizing */
   width: 100%;
   height: 100%;
   border-radius: 10px;
 }
 
 .title {
+  /* typography */
   font-family: "Outfit", sans-serif;
   color: hsl(218, 44%, 22%);
   font-weight: 700;
   font-size: 1.5rem;
+  /*box-sizing */
   padding: 0 20px;
   text-align: center;
 }
 
 .text {
+  /* typography */
   font-family: "Outfit", sans-serif;
   color: hsl(220, 15%, 55%);
   font-weight: 400;
   font-size: 1rem;
+  /*box-sizing */
   padding: 0 20px;
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .main-container {
+    /* box-sizing */
     width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-container {
+    /* box-sizing */
+    width: 20%;
+  }
+
+  .title {
+    /* typography */
+    font-size: 1.7rem;
+  }
+
+  .text {
+    /* typography */
+    font-size: 1.2rem;
   }
 }
